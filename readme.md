@@ -1,5 +1,8 @@
 # CLINS
+## News
+As we are busy with other stuff recently, we will find time to clean up the code. The code will be open source before the Chinese Lunar New Year.
 
+## Introduction
 CLINS: Continuous-Time Trajectory Estimation for LiDAR-Inertial System
 
 **CLINS** is a highly-accurate continuous-time trajectory estimation framework dedicated for SLAM (Simultaneous Localization and Mapping) applications, which enables fuse high-frequency and asynchronous sensor data effectively.  Now CLINS is applied in a 3D LiDAR-inertial system for evaluations.
