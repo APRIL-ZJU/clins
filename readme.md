@@ -11,6 +11,8 @@ The source code will be available after the publication of the related paper.
 
 Supplementary Video: https://youtu.be/7aQJklHg2RM
 
+Paper: [[arXiv](https://arxiv.org/pdf/2109.04687.pdf)]
+
 ## High resolution images in paper
 
 ![01-kaist-urban-07-map](./figure/01-kaist-urban-07-map.png)
