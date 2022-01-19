@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+   <node pkg="clins" type="kaist_sick_map_generation" name="kaist_sick_map_generation" output="screen">
+    <param name="knot_distance"         type="double"   value="0.1" />
+    
+    <param name="trajectory_path"       type="string"   value="/media/ha/ORICO/clins_dataset/kaist-urban-07/trajectory_control_points.txt" />
+    <param name="bag_path"              type="string"   value="/media/ha/ORICO/clins_dataset/kaist-urban-07.bag" />
+    <param name="save_cloud_path"       type="string"   value="/media/ha/ORICO/clins_dataset/kaist-urban-07/sick_map.pcd" />
+   </node>
+
+</launch>

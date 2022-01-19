@@ -1,0 +1,79 @@
+## Feature Extraction Parameter
+lidar_topic: /velodyne_left_points
+N_SCAN: 16
+Horizon_SCAN: 1800
+edge_threshold: 1.0
+surf_threshold: 0.1
+odometry_surface_leaf_size: 0.4
+undistort_scan_before_extraction: true
+min_distance: 1.0
+max_distance: 100.0
+
+## Bag Param
+bag_path: /media/ha/ORICO/clins_dataset/kaist-urban-07.bag
+imu_topic: /imu/data
+gps_topic: /gps/fix
+bag_start: 0
+bag_durr: -1
+
+## Methods of data fusion
+use_corner_feature: true
+use_imu_orientation: true
+
+## Spline Param
+knot_distance: 0.1
+
+# lidar odometry
+keyframe_search_radius: 30.0
+keyframe_density: 2.0
+corner_leaf_size: 0.2
+surface_leaf_size: 0.6
+keyframe_adding_angle_threshold: 30
+keyframe_adding_dist_meter: 0.5
+edge_min_valid_num: 10
+surf_min_valid_num: 100
+downsample_num: 1 # lidar Correspondence
+
+## ImuStateEstimator
+accel_excite_threshold: 0.5
+accel_excite_threshold: 0.5
+gyro_excite_threshold: 0.5 # not used
+sample_num: 5
+
+# For CalibParamManager
+# optimization
+gyro_weight: 40.0
+accel_weight: 1.0
+vel_weight: 1
+bias_weight: 1
+lidar_weight: 20.0
+
+time_offset: 0
+extrinsic:
+ Trans: [-0.368343, 0.395882, 0.24095]
+ Rot: [-0.515105, -0.702383, -0.491249,
+       0.487008, -0.711468, 0.506593,
+       -0.70533, 0.0217062, 0.708547]
+
+
+
+# Loop Closure
+loop_closure_enable_flag: false
+loop_closure_icp_recognition_manual_check: false
+loop_closure_frequency: 0.2
+loop_closure_use_full_cloud: true
+history_key_frame_search_radius: 40.0
+history_key_frame_time_diff: 15.0
+history_key_frame_index_diff: 25
+history_key_frame_search_num: 25
+history_key_frame_fitness_score: 0.5
+loop_closure_downsample_leaf_size: 0.2
+neighbor_edg_sample_time: 0.1
+
+loop_closure_weights:
+    pose_graph_edge_pos_weight: 10.0
+    pose_graph_edge_rot_weight: 20.0
+    velocity_weight: 1.0
+    gyro_weight: 2.0
+
+save_map: true
