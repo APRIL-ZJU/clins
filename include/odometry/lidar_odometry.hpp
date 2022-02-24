@@ -301,7 +301,7 @@ void LidarOdometry<_N>::FeatureCloudHandler(
   }
   PointCloudConvert(raw_surface_feature, feature_cur_.timestamp,
                     feature_cur_.surface_features);
-  PointCloudConvert(full_feature, feature_cur_.timestamp,
+  PointCloudConvert(raw_surface_feature, feature_cur_.timestamp,
                     feature_cur_.full_features);
 }
 
